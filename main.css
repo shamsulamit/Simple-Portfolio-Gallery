@@ -56,7 +56,7 @@ a {
           justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 
 .projects .single-projects .row .details h4 {
