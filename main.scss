@@ -1,0 +1,102 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+img{
+   width: 100%;
+}
+
+a{
+   text-decoration: none;
+   font-weight: 600;
+
+}
+
+
+.projects{
+   h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #093b61;
+   }
+   justify-content: center;
+   .single-projects{
+      position: relative;
+      padding: 15px ;
+      margin-bottom: 20px;
+      border: 2px solid #093b61;
+      border-radius: 1.5%;
+      .bg{
+         background: #093b6157;
+         border-radius: 50%;
+         height: 200px;
+         width: 200px;
+         position: absolute;
+         top: 50%;
+         right: 50%;
+         transform: translate(50% ,-50%);
+         z-index: -999;
+         transition: 1s;
+      }
+      .row{
+         justify-content: center;
+         align-items: end;
+         .details{
+            h4{
+               font-weight: 700;
+               color: #093b61;
+            }
+            p{
+               font-size: 12px;
+               text-align: justify;
+               margin: 0 0 10px 0;
+            }
+            a{
+               color: #fff;
+               background-color: #093b61;
+               padding: 5px 10px;
+               font-size: 12px;
+               border-radius: 5px;
+            }
+         
+         }
+         .image img{
+            object-fit: cover;
+            object-position: top;
+            height: 250px;
+            transition: 3s;
+         }
+      }
+      &:hover{
+         transition: 5s all ease-in-out;
+         .bg{
+            background: #093b61;
+            border-radius: 01%;
+            height: 100%;
+            width: 100%;
+         }
+         .row{
+            .details{
+               transition: 1.4s;
+               h4{
+                  color: #fff;
+               }
+               p{
+                  color: #fff;
+               }
+               a{
+                  color: #093b61;
+                  background-color: #fff;
+               }
+               
+            }
+            .image img{
+               object-position: bottom;
+            }
+         }
+      }
+   }
+   
+}
